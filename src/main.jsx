@@ -5,6 +5,7 @@ import { Error } from './routes/Error.jsx'
 import { Home } from './routes/Home.jsx'
 import { Sobre } from './routes/Sobre.jsx'
 import { Contato } from './routes/Contato.jsx'
+import { Login } from './routes/Login.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 
@@ -15,7 +16,8 @@ const router = createBrowserRouter([
     children: [
       {path:'/', element:<Home />},
       {path:'/Sobre', element:<Sobre />},
-      {path:'/Contato', element:<Contato />}
+      {path:'/Contato', element:<Contato />},
+      {path: '/Login', element: <Login/>}
     ]
   }
 ])
